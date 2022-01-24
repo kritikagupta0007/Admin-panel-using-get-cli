@@ -1,0 +1,33 @@
+name: sample_get_cli
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.16.0-80.0.dev <3.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.1
+  get_cli: ^1.7.1
+  google_fonts: ^2.1.0
+  flutter_svg: ^0.22.0
+  fl_chart: ^0.36.1
+  provider: ^5.0.0
+  data_table_2: ^2.0.3
+  ionicons: ^0.1.2
+  flutter_rating_bar: ^4.0.0
+
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_lints: ^1.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
