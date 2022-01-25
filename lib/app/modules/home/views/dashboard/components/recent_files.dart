@@ -32,13 +32,13 @@ class RecentFiles extends StatelessWidget {
               minWidth: 600,
               columns: [
                 DataColumn(
-                  label: Text("Shop Name"),
+                  label: Text("Shop Name",style: TextStyle(color: Colors.white),),
                 ),
                 DataColumn(
-                  label: Text("Location"),
+                  label: Text("Location",style: TextStyle(color: Colors.white),),
                 ),
                 DataColumn(
-                  label: Text("Followers"),
+                  label: Text("Followers",style: TextStyle(color: Colors.white),),
                 ),
               ],
               rows: List.generate(
