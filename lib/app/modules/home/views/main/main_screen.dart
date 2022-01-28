@@ -63,11 +63,11 @@ class _MainScreenState extends State<MainScreen> {
                 flex: 5,
                 child: ReportMainScreen(),
               ),
-            if (title == 5)
+            if (title == 6)
               Expanded(
                 // It takes 5/6 part of the screen
                 flex: 5,
-                child: ApprovalsScreen(),
+                child: AccessRightsScreen(),
               ),
             if (title == 7)
               Expanded(

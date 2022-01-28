@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../constants.dart';
-import '../main/components/acnt types.dart';
+import 'components/acnt types.dart';
 
-class ApprovalsScreen extends StatelessWidget {
-  const ApprovalsScreen({Key? key}) : super(key: key);
+class AccessRightsScreen extends StatelessWidget {
+  const AccessRightsScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class ApprovalsScreen extends StatelessWidget {
           children: [
             SizedBox(height: defaultPadding),
             Text(
-              "Approvals",
+              "Access Rights",
               style: Theme.of(context).textTheme.headline6,
             ),
             SizedBox(height: 32),
