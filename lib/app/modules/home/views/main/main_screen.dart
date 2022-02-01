@@ -12,6 +12,7 @@ import 'package:provider/provider.dart';
 import 'package:sample_get_cli/app/modules/home/views/recommendations/recommendations_screen.dart';
 import 'package:sample_get_cli/responsive.dart';
 
+import '../Acccess/access_main.dart';
 import '../analytics/analytics_main.dart';
 import 'components/side_menu.dart';
 
@@ -70,11 +71,11 @@ class _MainScreenState extends State<MainScreen> {
                 child: ApprovalsMainScreen(),
               ),
             if (title == 6)
-              const Expanded(
+              Expanded(
                 // It takes 5/6 part of the screen
                 flex: 5,
-                child: ApprovalsMainScreen(),
-              ),
+                child: AccessRightsScreen(),
+                ),
             if (title == 7)
               const Expanded(
                 // It takes 5/6 part of the screen
