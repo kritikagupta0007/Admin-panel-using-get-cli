@@ -11,7 +11,7 @@ import 'package:provider/provider.dart';
 import 'package:sample_get_cli/app/modules/home/views/recommendations/recommendations_screen.dart';
 import 'package:sample_get_cli/responsive.dart';
 
-import '../Approvals/approvals_main.dart';
+import '../Acccess/access_main.dart';
 import '../analytics/analytics_main.dart';
 import 'components/side_menu.dart';
 
