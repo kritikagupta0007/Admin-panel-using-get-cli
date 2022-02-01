@@ -1,4 +1,5 @@
 import 'package:sample_get_cli/app/modules/home/controllers/MenuController.dart';
+import 'package:sample_get_cli/app/modules/home/views/approvals/approvals_main.dart';
 import 'package:sample_get_cli/app/modules/home/views/dashboard/dashboard_screen.dart';
 import 'package:sample_get_cli/app/modules/home/views/database/database_screen.dart';
 import 'package:sample_get_cli/app/modules/home/views/notification/notification_screen.dart';
@@ -45,37 +46,43 @@ class _MainScreenState extends State<MainScreen> {
                 child: DashboardScreen(),
               ),
             if (title == 2)
-              Expanded(
+              const Expanded(
                 // It takes 5/6 part of the screen
                 flex: 5,
                 child: AnalyticsMainScreen(),
               ),
             if (title == 3)
-              Expanded(
+              const Expanded(
                 // It takes 5/6 part of the screen
                 flex: 5,
                 child: DatabaseMainScreen(),
               ),
             if (title == 4)
-              Expanded(
+              const Expanded(
                 // It takes 5/6 part of the screen
                 flex: 5,
                 child: ReportMainScreen(),
               ),
+            if (title == 5)
+              const Expanded(
+                // It takes 5/6 part of the screen
+                flex: 5,
+                child: ApprovalsMainScreen(),
+              ),
             if (title == 7)
-              Expanded(
+              const Expanded(
                 // It takes 5/6 part of the screen
                 flex: 5,
                 child: RecommendationScreen(),
               ),
             if (title == 8)
-              Expanded(
+              const Expanded(
                 // It takes 5/6 part of the screen
                 flex: 5,
                 child: SalesMarketScreen(),
               ),
             if (title == 10)
-              Expanded(
+              const Expanded(
                 // It takes 5/6 part of the screen
                 flex: 5,
                 child: NotificationScreen(),

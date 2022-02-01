@@ -44,14 +44,14 @@ class AnalyticsMainScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: defaultPadding),
-                Padding(
-                  padding: const EdgeInsets.all(20.0),
+                const SizedBox(height: defaultPadding),
+                const Padding(
+                  padding: EdgeInsets.all(20.0),
                   child: Expanded(flex: 3, child: Preferences()),
                 ),
               ],
             ),
-            SizedBox(height: defaultPadding),
+            const SizedBox(height: defaultPadding),
           ],
         ),
       ),
