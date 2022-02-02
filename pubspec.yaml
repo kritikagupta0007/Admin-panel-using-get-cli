@@ -16,7 +16,9 @@ dependencies:
   data_table_2: ^2.0.3
   ionicons: ^0.1.2
   flutter_rating_bar: ^4.0.0
-  flutter_staggered_grid_view:
+  get_storage: ^2.0.3
+  flutter_dashboard:
+    path: ./plugins/flutter_dashboard
 
   flutter: 
     sdk: flutter

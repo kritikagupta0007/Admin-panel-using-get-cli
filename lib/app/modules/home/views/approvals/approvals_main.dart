@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sample_get_cli/app/modules/home/views/approvals/components/card_data.dart';
 import 'package:sample_get_cli/app/modules/home/views/approvals/components/header.dart';
 import 'package:sample_get_cli/app/modules/home/views/approvals/components/search.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+
 import '../../../../../constants.dart';
 import '../../../../../responsive.dart';
 
