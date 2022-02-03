@@ -59,6 +59,8 @@ class VipaniApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlutterDashboardMaterialApp(
+
+
       title: "Vipani Admin",
       // config: AppConfig.dashboardConfig,
       dashboardItems: AppPages.allPages(context),
