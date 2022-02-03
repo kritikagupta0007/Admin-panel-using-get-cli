@@ -147,9 +147,9 @@ class AppPages {
             binding: DatabaseBinding(),
           ),
           actions: [],
-          icon: const Icon(Icons.data_exploration_sharp),
+          icon: Icon(Icons.data_usage_rounded),
           selectedIcon: Icon(
-            Icons.data_exploration_sharp,
+            Icons.data_usage_rounded,
             color: Theme.of(context).scaffoldBackgroundColor,
           ),
         ),
