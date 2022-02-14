@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
+import 'package:sample_get_cli/app/modules/approvals/views/components/card_data.dart';
+import 'package:sample_get_cli/app/modules/approvals/views/components/header.dart';
+import 'package:sample_get_cli/app/modules/approvals/views/components/search.dart';
 
 import '../../../../constants.dart';
 import '../../../../responsive.dart';
-import '../../home/views/approvals/approvals_main.dart';
-import '../../home/views/approvals/components/header.dart';
-import '../../home/views/approvals/components/search.dart';
 import '../controllers/approvals_controller.dart';
 
 class ApprovalsView extends GetView<ApprovalsController> {
@@ -37,7 +36,7 @@ class ApprovalsView extends GetView<ApprovalsController> {
                         mobile: ImageVideoGridview(
                           crossAxisCount: _size.width < 650 ? 2 : 4,
                           childAspectRatio:
-                          _size.width < 650 && _size.width > 350 ? 1.3 : 1,
+                              _size.width < 650 && _size.width > 350 ? 1.3 : 1,
                         ),
                         tablet: ImageVideoGridview(),
                         desktop: ImageVideoGridview(
@@ -55,7 +54,7 @@ class ApprovalsView extends GetView<ApprovalsController> {
                         mobile: TextGridview(
                           crossAxisCount: _size.width < 650 ? 2 : 4,
                           childAspectRatio:
-                          _size.width < 650 && _size.width > 350 ? 1.3 : 1,
+                              _size.width < 650 && _size.width > 350 ? 1.3 : 1,
                         ),
                         tablet: TextGridview(),
                         desktop: TextGridview(
@@ -70,6 +69,60 @@ class ApprovalsView extends GetView<ApprovalsController> {
           ],
         ),
       ),
+    );
+  }
+}
+
+class ImageVideoGridview extends StatelessWidget {
+  const ImageVideoGridview(
+      {Key? key, this.crossAxisCount = 3, this.childAspectRatio = 1})
+      : super(key: key);
+
+  final int crossAxisCount;
+  final double childAspectRatio;
+
+  @override
+  Widget build(BuildContext context) {
+    return GridView.builder(
+      physics: NeverScrollableScrollPhysics(),
+      shrinkWrap: true,
+      itemCount: 6,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: crossAxisCount,
+        crossAxisSpacing: defaultPadding,
+        mainAxisSpacing: defaultPadding,
+        childAspectRatio: childAspectRatio,
+      ),
+      itemBuilder: (context, index) {
+        return CardDataInfo();
+      },
+    );
+  }
+}
+
+class TextGridview extends StatelessWidget {
+  const TextGridview(
+      {Key? key, this.crossAxisCount = 3, this.childAspectRatio = 1})
+      : super(key: key);
+
+  final int crossAxisCount;
+  final double childAspectRatio;
+
+  @override
+  Widget build(BuildContext context) {
+    return GridView.builder(
+      physics: NeverScrollableScrollPhysics(),
+      shrinkWrap: true,
+      itemCount: 6,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: crossAxisCount,
+        crossAxisSpacing: defaultPadding,
+        mainAxisSpacing: defaultPadding,
+        childAspectRatio: childAspectRatio,
+      ),
+      itemBuilder: (context, index) {
+        return CardDataInfo1();
+      },
     );
   }
 }

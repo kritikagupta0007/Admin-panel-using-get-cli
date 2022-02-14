@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:sample_get_cli/app/modules/sales_marketing/views/components/bar_chart.dart';
+import 'package:sample_get_cli/app/modules/sales_marketing/views/components/header1.dart';
 
 import '../../../../constants.dart';
-import '../../home/views/dashboard/components/header.dart';
-import '../../home/views/sales_market/components/bar_chart.dart';
+
 import '../controllers/sales_marketing_controller.dart';
 
 class SalesMarketingView extends GetView<SalesMarketingController> {

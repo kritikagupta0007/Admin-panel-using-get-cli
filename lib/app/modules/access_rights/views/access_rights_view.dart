@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:sample_get_cli/app/modules/access_rights/views/components/acnt%20types.dart';
 
 import '../../../../constants.dart';
-import '../../home/views/Acccess/components/acnt types.dart';
 import '../controllers/access_rights_controller.dart';
 
 class AccessRightsView extends GetView<AccessRightsController> {

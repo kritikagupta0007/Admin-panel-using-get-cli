@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:sample_get_cli/app/modules/dashboard/views/components/header.dart';
+import 'package:sample_get_cli/app/modules/dashboard/views/components/my_fields.dart';
+import 'package:sample_get_cli/app/modules/dashboard/views/components/recent_files.dart';
+import 'package:sample_get_cli/app/modules/dashboard/views/components/storage_details.dart';
 
 import '../../../../constants.dart';
 import '../../../../responsive.dart';
-import '../../home/views/dashboard/components/header.dart';
-import '../../home/views/dashboard/components/my_fields.dart';
-import '../../home/views/dashboard/components/recent_files.dart';
-import '../../home/views/dashboard/components/storage_details.dart';
+
 import '../controllers/dashboard_controller.dart';
 
 class DashboardView extends GetView<DashboardController> {
@@ -18,7 +19,7 @@ class DashboardView extends GetView<DashboardController> {
         padding: EdgeInsets.all(defaultPadding),
         child: Column(
           children: [
-            Header(),
+            const Header(),
             SizedBox(height: defaultPadding),
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -27,9 +28,9 @@ class DashboardView extends GetView<DashboardController> {
                   flex: 5,
                   child: Column(
                     children: [
-                      MyFiles(),
+                      const MyFiles(),
                       SizedBox(height: defaultPadding),
-                      RecentFiles(),
+                      const RecentFiles(),
                       if (Responsive.isMobile(context))
                         SizedBox(height: defaultPadding),
                       if (Responsive.isMobile(context)) StarageDetails(),

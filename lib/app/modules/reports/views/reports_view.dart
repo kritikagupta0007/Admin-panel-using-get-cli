@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:sample_get_cli/app/modules/reports/views/components/header.dart';
 
 import '../../../../constants.dart';
-import '../../home/views/dashboard/components/header.dart';
+
 import '../../home/views/reports/components/report.dart';
 import '../controllers/reports_controller.dart';
 

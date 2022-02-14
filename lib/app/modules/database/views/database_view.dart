@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:sample_get_cli/app/modules/home/views/database/components/header.dart';
 
 import '../../../../constants.dart';
-import '../../home/views/dashboard/components/header.dart';
 import '../../home/views/database/components/line_chart.dart';
 import '../../home/views/database/components/my_files.dart';
 import '../controllers/database_controller.dart';

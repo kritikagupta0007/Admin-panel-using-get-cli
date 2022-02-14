@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:sample_get_cli/app/modules/analytics/views/components/behavioural_pattern.dart';
+import 'package:sample_get_cli/app/modules/analytics/views/components/preference.dart';
 
 import '../../../../constants.dart';
 import '../../../../responsive.dart';
-import '../../home/views/analytics/components/behavioural_pattern.dart';
-import '../../home/views/analytics/components/preference.dart';
+
 import '../controllers/analytics_controller.dart';
 
 class AnalyticsView extends GetView<AnalyticsController> {
