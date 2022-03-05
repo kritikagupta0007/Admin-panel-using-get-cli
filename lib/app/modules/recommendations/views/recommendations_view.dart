@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:sample_get_cli/app/modules/recommendations/views/components/analytics.dart';
+import 'package:sample_get_cli/app/modules/recommendations/views/components/head.dart';
+import 'package:sample_get_cli/app/modules/recommendations/views/components/reviews.dart';
 
 import '../../../../constants.dart';
-import '../../home/views/recommendations/components/analytics.dart';
-import '../../home/views/recommendations/components/head.dart';
-import '../../home/views/recommendations/components/reviews.dart';
 import '../controllers/recommendations_controller.dart';
 
 class RecommendationsView extends GetView<RecommendationsController> {

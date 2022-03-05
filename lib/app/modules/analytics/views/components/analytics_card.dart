@@ -1,9 +1,10 @@
 import 'package:sample_get_cli/app/modules/home/models/User_behaviour.dart';
-import 'package:sample_get_cli/app/modules/home/views/dashboard/components/file_info_card.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../../../constants.dart';
+import '../../../database/views/components/file_info_card.dart';
 
 class AnalyticsCard extends StatelessWidget {
   const AnalyticsCard({

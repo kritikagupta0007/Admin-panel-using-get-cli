@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:sample_get_cli/app/modules/reports/views/components/header.dart';
+import 'package:sample_get_cli/app/modules/reports/views/components/report.dart';
 
 import '../../../../constants.dart';
-
-import '../../home/views/reports/components/report.dart';
 import '../controllers/reports_controller.dart';
 
 class ReportsView extends GetView<ReportsController> {

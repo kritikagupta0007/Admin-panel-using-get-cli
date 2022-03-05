@@ -1,5 +1,4 @@
 import 'package:sample_get_cli/app/modules/home/models/MyFiles.dart';
-import 'package:sample_get_cli/app/modules/home/views/dashboard/components/chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -93,8 +92,8 @@ class ProgressLine extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          width: double.infinity,
-          height: 5,
+          width: 5,
+          height: double.infinity,
           decoration: BoxDecoration(
             color: color!.withOpacity(0.1),
             borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -102,8 +101,8 @@ class ProgressLine extends StatelessWidget {
         ),
         LayoutBuilder(
           builder: (context, constraints) => Container(
-            width: constraints.maxWidth * (percentage! / 100),
-            height: 5,
+            width: 5,
+            height: constraints.maxWidth * (percentage! / 100),
             decoration: BoxDecoration(
               color: color,
               borderRadius: const BorderRadius.all(Radius.circular(10)),
