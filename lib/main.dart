@@ -1,12 +1,8 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_dashboard/flutter_dashboard.dart';
-
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:sample_get_cli/app/modules/home/controllers/MenuController.dart';
 import 'package:sample_get_cli/constants.dart';
 import 'app/modules/home/views/main/main_screen.dart';
 import 'app/routes/app_pages.dart';
